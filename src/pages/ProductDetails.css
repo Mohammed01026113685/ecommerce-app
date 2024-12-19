@@ -1,0 +1,123 @@
+.product-details {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.product-details img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-details .details {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-details .details h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.product-details .details p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.product-details .details .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007BFF;
+  margin-bottom: 30px;
+}
+
+.product-details .details button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.product-details .details button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+  .product-details {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .product-details img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .product-details .details {
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-details .details h1 {
+    font-size: 1.8rem;
+  }
+
+  .product-details .details p {
+    font-size: 1rem;
+  }
+
+  .product-details .details .price {
+    font-size: 1.5rem;
+  }
+
+  .product-details .details button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-details img {
+    width: 100%;
+  }
+
+  .product-details .details h1 {
+    font-size: 1.5rem;
+  }
+
+  .product-details .details p {
+    font-size: 0.95rem;
+  }
+
+  .product-details .details .price {
+    font-size: 1.2rem;
+  }
+
+  .product-details .details button {
+    font-size: 0.95rem;
+    padding: 10px 15px;
+  }
+}
